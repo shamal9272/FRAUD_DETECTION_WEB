@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraud Detection</title>
+</head>
+<body>
+
+<h2>Fraud Message Detection</h2>
+
+<form action="/predict" method="post">
+    <textarea name="message" placeholder="Enter message..." required></textarea>
+    <br><br>
+    <button type="submit">Check</button>
+</form>
+
+{% if prediction %}
+<h3>{{ prediction }}</h3>
+{% endif %}
+
+</body>
+</html>
